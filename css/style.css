@@ -1,26 +1,54 @@
+body{
+    margin: 0px;
+}
+
 #container{
     display: grid;
     height: 100vh;
-    grid-template-rows: 7.5% 7.5% 75% 1fr;
+    grid-template-rows: 10% 7.5% 1fr;
     grid-template-areas: 
     'hd'
     'nv'
     'mn1'
-    'ft'
 }
 
 header{
     grid-area: hd;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    background-color: rgb(75, 75, 75);
 }
 
 nav{
     grid-area: nv;
+    display: flex;
+    background-color: rgb(75, 75, 75);
+}
+
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*border-style: solid;*/
+    color: black;
+    text-decoration: none;
+    margin: auto;
 }
 
 .main1{
     grid-area: mn1;
+    background-image: url("../img/animals/istock-1307831360.jpg");
+    background-size: cover;
+    background-position-y: -75px;
+    display: flex;
+    justify-content: center;
 }
 
-footer{
-    grid-area: ft;
+.katt{
+    width: 100%;
+
+}
+
+h2{
+    
 }
