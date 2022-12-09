@@ -17,10 +17,7 @@ header{
     width: 100%;
     height: 100%;
     display: flex;
-    margin: auto;
     background-color: rgb(154, 158, 161);
-    
-    
 }
 
 nav{
@@ -28,15 +25,15 @@ nav{
     display: flex;
     background-color: rgb(154, 158, 161);
     box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
-    
+    justify-content: space-around;
+    align-items: center;
 }
 
 a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /*border-style: solid;*/
-    color: rgb(66, 66, 66);
+    color: rgb(40, 40, 40);
     text-decoration: none;
-    margin: auto;
 }
 
 .main1{
@@ -46,6 +43,8 @@ a{
     background-position-y: -75px;
     display: flex;
     justify-content: center;
+    padding-top: 80px;
+    
 }
 
 .main2{
@@ -63,7 +62,7 @@ a{
 
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(66, 66, 66);
+    color: rgb(40, 40, 40);
 }
 
 .card{
@@ -80,4 +79,33 @@ h2{
 
 img{
     border-radius: 10px 10px 0 0;
+}
+
+#container3{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 10% 7.5% 1fr;
+    grid-template-areas: 
+    'hd hd'
+    'nv nv'
+    's as1'
+    's as2'
+}
+
+.s{
+    grid-area: s;
+    background-image: url(../img/Skärmbild\ 2022-12-09\ 133624.png);
+    background-size: cover;
+}
+
+.as1{
+    grid-area: as1;
+}
+
+.as2{
+    grid-area: as2;
+}
+
+.anst{
+    width: 100%;
 }
