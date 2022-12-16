@@ -1,5 +1,8 @@
 body{
     margin: 0px;
+    background-image: url("../img/animals/istock-1307831360.jpg");
+    background-size: cover;
+    background-position-y: -20%;
 }
 
 #container{
@@ -18,6 +21,7 @@ header{
     height: 100%;
     display: flex;
     background-color: rgb(154, 158, 161);
+    justify-content: center;
 }
 
 nav{
@@ -25,7 +29,7 @@ nav{
     display: flex;
     background-color: rgb(154, 158, 161);
     box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -38,9 +42,6 @@ a{
 
 .main1{
     grid-area: mn1;
-    background-image: url("../img/animals/istock-1307831360.jpg");
-    background-size: cover;
-    background-position-y: -75px;
     display: flex;
     justify-content: center;
     padding-top: 80px;
@@ -63,6 +64,7 @@ a{
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(40, 40, 40);
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.3), 1px -1px 0 rgba(255, 255, 255, 0.3), -1px 1px 0 rgba(255, 255, 255, 0.3), 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .card{
@@ -70,11 +72,12 @@ h2{
     height: 55%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 10px;
+    background-color: rgb(255, 255, 255);
 }
 .container2{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 img{
@@ -84,7 +87,10 @@ img{
 #container3{
     display: grid;
     height: 100vh;
-    grid-template-rows: 10% 7.5% 1fr;
+    
+    background-position-y: -70px;
+    grid-template-rows: 10% 7.5% 1fr 1.25fr;
+    grid-template-columns: 50% 50%;
     grid-template-areas: 
     'hd hd'
     'nv nv'
@@ -94,18 +100,35 @@ img{
 
 .s{
     grid-area: s;
-    background-image: url(../img/Skärmbild\ 2022-12-09\ 133624.png);
-    background-size: cover;
+    padding: 20px;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
 }
 
 .as1{
     grid-area: as1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .as2{
     grid-area: as2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .anst{
     width: 100%;
+}
+
+p{
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4);
+
 }
